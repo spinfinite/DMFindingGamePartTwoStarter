@@ -12,14 +12,18 @@ import UIKit
  1.2 Create an IBOutlet for the high score label.
  */
 class StartViewController: UIViewController {
+    @IBOutlet weak var highScoreLabel: UILabel!
     
     let gameBrain = GameBrain.shared
     
     /**
      3.1 Update the `highScoreLabel`'s text to be the high score from the game brain.
      */
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        highScoreLabel.text = "High Score: "+String(gameBrain.highScore)
         
     }
     
@@ -27,4 +31,7 @@ class StartViewController: UIViewController {
      4.1 Transition the user to the `GameViewController` when the start button is tapped.
      */
     
+    @IBAction func startButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToGameViewController", sender: self)
+    }
 }

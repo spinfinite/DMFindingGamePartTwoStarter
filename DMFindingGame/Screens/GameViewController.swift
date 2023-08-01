@@ -12,6 +12,13 @@ class GameViewController: UIViewController {
     /**
      5.1 Create IBOutlets for the target letter label, the score label, and the seconds label. Also, create an IBOutlet collection for the letter buttons.
      */
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBOutlet weak var secondsLabel: UILabel!
+    
+    @IBOutlet weak var targetLetterLabel: UILabel!
+  
+    @IBOutlet var letterButtons: [UIButton]!
     
     var timer: Timer!
     let gameBrain = GameBrain.shared
@@ -23,7 +30,9 @@ class GameViewController: UIViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        gameBrain.newGame(numLetters: 12)
+        updateUI()
+        configureTimer()
     }
     
     /*
@@ -44,6 +53,9 @@ class GameViewController: UIViewController {
     }
     
     func updateUI() {
+        targetLetterLabel.text = gameBrain.targetLetter
+        scoreLabel.text = "Score:"+String(gameBrain.score)
+        secondsLabel.text = "Seconds:"+String(gameBrain.secondsRemaining)
         
     }
     

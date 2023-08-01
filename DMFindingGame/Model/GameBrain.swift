@@ -22,7 +22,7 @@ import Foundation
       - An Int `highScore` initially set to 0
       - An Int `numLetters` initially set to 0
       - An Int `secondsRemaining` set to 30
-      - An Int `letters` set to 30
+      - Ignore An Int `letters` set to 30
       - A [String] `letters` set to the letters of the alphabet.
       
      **/
@@ -32,7 +32,6 @@ import Foundation
      var highScore = 0
      var numLetters = 0
      var secondsRemaining = 30
-     var allLetters = 30
      let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     
      /**
@@ -52,7 +51,6 @@ import Foundation
          var lettersFound = [targetLetter]
          
          for _ in 0...numLetters {
-             
              var temporaryLetter: String
              
              repeat {
@@ -63,13 +61,9 @@ import Foundation
              } while (lettersFound.contains(temporaryLetter))
              
              lettersFound.append(temporaryLetter)
-
          }
-         
          print(lettersFound)
-         
          return lettersFound
-         
      }
      
      func newRound() {
@@ -78,22 +72,27 @@ import Foundation
          print(targetLetter)
          randomLetters = generateRandomLetters(numLetters: 11)
          //print(randomLetters.rando)
-         updateTargetLetterLabel()
-         updateLetterButtons()
+         //updateTargetLetterLabel()
+         //updateLetterButtons()
          
      }
      
-     func newGame() {
+     func newGame(numLetters: Int) {
          
+         score = 0
+         secondsRemaining = 30
          newRound()
-         scoreLabel.text = String(score)
-         secondsRemaining = 0
      }
      
      func letterSelected(selectedLetter: String) {
          if (selectedLetter == targetLetter) {
              score += 1
          }
+         
+         if (score > highScore){
+             highScore = score
+         }
+         
          newRound()
      }
      

@@ -55,7 +55,7 @@
         <!--Game View Controller-->
         <scene sceneID="z6V-5S-dIa">
             <objects>
-                <viewController id="Aex-3U-LMZ" customClass="GameViewController" customModule="DMFindingGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="Aex-3U-LMZ" customClass="GameViewController" customModule="DMFindingGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eGH-0B-AU4">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

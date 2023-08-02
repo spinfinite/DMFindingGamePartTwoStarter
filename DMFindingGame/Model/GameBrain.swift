@@ -64,6 +64,7 @@ import Foundation
          }
          print(numLetters)
          print(lettersFound.count)
+         lettersFound.shuffle()
          return lettersFound
      }
      

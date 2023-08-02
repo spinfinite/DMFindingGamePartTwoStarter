@@ -82,7 +82,7 @@ class GameViewController: UIViewController {
         if gameBrain.secondsRemaining <= 0 {
             timer.invalidate()
             gameBrain.newGame(numLetters: letterButtons.count)
-            updateUI()
+            self.dismiss(animated: true)
             
         }
     }

@@ -29,12 +29,12 @@ final class DMFindingGameTests: XCTestCase {
                 let userChoseCorrectLetter = Bool.random()
                 
                 if userChoseCorrectLetter {
-                    gameBrain.letterSelected(letter: gameBrain.targetLetter)
+                    gameBrain.letterSelected(selectedLetter: gameBrain.targetLetter)
                     XCTAssertEqual(gameBrain.score, oldScore + 1)
                 } else {
                     let filteredArray = gameBrain.letters.filter { $0 != gameBrain.targetLetter }
                     let randomLetter = filteredArray.randomElement()!
-                    gameBrain.letterSelected(letter: randomLetter)
+                    gameBrain.letterSelected(selectedLetter: randomLetter)
                     XCTAssertEqual(gameBrain.score, oldScore)
                 }
                 

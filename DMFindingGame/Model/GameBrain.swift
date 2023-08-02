@@ -47,10 +47,10 @@ import Foundation
       
       Run the tests in `DMFindingGameTests` to make sure your code is correct.
      **/
-     func generateRandomLetters(numLetters: Int) -> [String] {
+     func generateRandomLetters() -> [String] {
          var lettersFound = [targetLetter]
          
-         for _ in 0...numLetters {
+         for _ in 1..<numLetters {
              var temporaryLetter: String
              
              repeat {
@@ -62,7 +62,8 @@ import Foundation
              
              lettersFound.append(temporaryLetter)
          }
-         print(lettersFound)
+         print(numLetters)
+         print(lettersFound.count)
          return lettersFound
      }
      
@@ -70,7 +71,7 @@ import Foundation
          
          targetLetter = letters[Int.random(in: 0...25)]
          print(targetLetter)
-         randomLetters = generateRandomLetters(numLetters: 11)
+         randomLetters = generateRandomLetters()
          //print(randomLetters.rando)
          //updateTargetLetterLabel()
          //updateLetterButtons()
@@ -79,6 +80,7 @@ import Foundation
      
      func newGame(numLetters: Int) {
          
+         self.numLetters = numLetters
          score = 0
          secondsRemaining = 30
          newRound()

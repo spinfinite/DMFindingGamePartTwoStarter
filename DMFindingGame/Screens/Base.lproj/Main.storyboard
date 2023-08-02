@@ -60,170 +60,239 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCu-Wo-C8K">
-                                <rect key="frame" x="212" y="81" width="118" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cl-7u-TpR">
+                                <rect key="frame" x="218" y="110" width="112" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="UXq-FB-gzw"/>
+                                    <constraint firstAttribute="width" secondItem="6Cl-7u-TpR" secondAttribute="height" multiplier="28:5" id="zfP-Jb-rL2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seconds" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cl-7u-TpR">
-                                <rect key="frame" x="218" y="110" width="112" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp6-9X-RIf">
-                                <rect key="frame" x="174" y="166" width="49" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp6-9X-RIf">
+                                <rect key="frame" x="142" y="165.66666666666666" width="106.33333333333331" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d91-te-eNw" userLabel="Button2">
-                                <rect key="frame" x="117" y="306" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-Sg-1ht" userLabel="Button3">
-                                <rect key="frame" x="205" y="306" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-ck-d4W" userLabel="Button4">
-                                <rect key="frame" x="291" y="306" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-6d-f1X" userLabel="Button5">
-                                <rect key="frame" x="32" y="418" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpn-Fp-HAB" userLabel="Button6">
-                                <rect key="frame" x="117" y="418" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJB-JG-wMn" userLabel="Button7">
-                                <rect key="frame" x="205" y="418" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-4b-OGz" userLabel="Button8">
-                                <rect key="frame" x="291" y="418" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7J-ub-Y3e" userLabel="Button9">
-                                <rect key="frame" x="32" y="532" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcT-6Q-fgW" userLabel="Button10">
-                                <rect key="frame" x="117" y="532" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1e-nd-Rtj" userLabel="Button11">
-                                <rect key="frame" x="205" y="532" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paC-f1-byT" userLabel="Button12">
-                                <rect key="frame" x="291" y="532" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3y4-ZV-a6N" userLabel="Button1">
-                                <rect key="frame" x="32" y="306" width="67" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Nej-fE-21g">
+                                <rect key="frame" x="16.666666666666657" y="427.66666666666669" width="357" height="100.00000000000006"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-6d-f1X" userLabel="Button5">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="oha-2e-dbV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpn-Fp-HAB" userLabel="Button6">
+                                        <rect key="frame" x="94" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="m1i-8w-OOD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJB-JG-wMn" userLabel="Button7">
+                                        <rect key="frame" x="188" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="a7B-ZZ-hng"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-4b-OGz" userLabel="Button8">
+                                        <rect key="frame" x="282" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="CCx-cm-xUc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XJw-bS-KRi"/>
+                                    <constraint firstAttribute="width" secondItem="Nej-fE-21g" secondAttribute="height" multiplier="357:100" id="pXt-V6-rLM"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="vgV-eC-VU0">
+                                <rect key="frame" x="16.666666666666657" y="541.66666666666663" width="357" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7J-ub-Y3e" userLabel="Button9">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="5FF-54-Ndj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcT-6Q-fgW" userLabel="Button10">
+                                        <rect key="frame" x="94" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="ZzS-UU-87L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1e-nd-Rtj" userLabel="Button11">
+                                        <rect key="frame" x="188" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="qup-MA-RpO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paC-f1-byT" userLabel="Button12">
+                                        <rect key="frame" x="282" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="NIg-MT-B2C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vgV-eC-VU0" secondAttribute="height" multiplier="357:100" id="AaI-xq-hgr"/>
+                                    <constraint firstAttribute="height" constant="100" id="eLT-Nc-Yty"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="8LA-rR-3ma">
+                                <rect key="frame" x="16.666666666666657" y="313.66666666666669" width="357" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3y4-ZV-a6N" userLabel="Button1">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="mst-Hc-33s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d91-te-eNw" userLabel="Button2">
+                                        <rect key="frame" x="94" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="D6p-TA-uYW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-Sg-1ht" userLabel="Button3">
+                                        <rect key="frame" x="188" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="x2G-lc-VEj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-ck-d4W" userLabel="Button4">
+                                        <rect key="frame" x="282" y="0.0" width="75" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterButtonTapped:" destination="Aex-3U-LMZ" eventType="touchUpInside" id="U9D-hd-MRU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KHB-UW-4sa"/>
+                                    <constraint firstAttribute="width" secondItem="8LA-rR-3ma" secondAttribute="height" multiplier="357:100" id="cII-LT-5rf"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCu-Wo-C8K">
+                                <rect key="frame" x="285.66666666666669" y="59.000000000000007" width="44.333333333333314" height="20.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.329999999999998" id="5zV-Ji-B4A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jcz-0g-HEe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8LA-rR-3ma" firstAttribute="top" secondItem="zp6-9X-RIf" secondAttribute="bottom" constant="100" id="2sA-vz-Jxd"/>
+                            <constraint firstItem="Jcz-0g-HEe" firstAttribute="trailing" secondItem="pCu-Wo-C8K" secondAttribute="trailing" constant="60" id="6cf-L9-dhj"/>
+                            <constraint firstItem="Nej-fE-21g" firstAttribute="top" secondItem="8LA-rR-3ma" secondAttribute="bottom" constant="14" id="7j5-tX-Nud"/>
+                            <constraint firstItem="zp6-9X-RIf" firstAttribute="top" secondItem="6Cl-7u-TpR" secondAttribute="bottom" constant="35.670000000000002" id="7qg-Q7-x4Q"/>
+                            <constraint firstItem="Nej-fE-21g" firstAttribute="centerX" secondItem="eGH-0B-AU4" secondAttribute="centerX" id="JPW-lH-KBu"/>
+                            <constraint firstItem="6Cl-7u-TpR" firstAttribute="top" secondItem="pCu-Wo-C8K" secondAttribute="bottom" constant="30.670000000000002" id="XOa-OL-gQl"/>
+                            <constraint firstItem="zp6-9X-RIf" firstAttribute="centerX" secondItem="eGH-0B-AU4" secondAttribute="centerX" id="erD-6k-tgV"/>
+                            <constraint firstItem="Jcz-0g-HEe" firstAttribute="trailing" secondItem="6Cl-7u-TpR" secondAttribute="trailing" constant="60" id="k6J-xc-oIo"/>
+                            <constraint firstItem="vgV-eC-VU0" firstAttribute="top" secondItem="Nej-fE-21g" secondAttribute="bottom" constant="14" id="lyB-XK-iMB"/>
+                            <constraint firstItem="vgV-eC-VU0" firstAttribute="centerX" secondItem="Jcz-0g-HEe" secondAttribute="centerX" id="nY6-DY-nQI"/>
+                            <constraint firstItem="pCu-Wo-C8K" firstAttribute="top" secondItem="Jcz-0g-HEe" secondAttribute="top" constant="12" id="vGi-wx-rR8"/>
+                            <constraint firstItem="8LA-rR-3ma" firstAttribute="centerX" secondItem="Jcz-0g-HEe" secondAttribute="centerX" id="zdx-bU-2t1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="pCu-Wo-C8K" id="baV-bx-WPW"/>
                         <outlet property="secondsLabel" destination="6Cl-7u-TpR" id="EDq-Oo-MJe"/>
                         <outlet property="targetLetterLabel" destination="zp6-9X-RIf" id="0pd-a0-0VK"/>
+                        <outletCollection property="letterButtons" destination="3y4-ZV-a6N" collectionClass="NSMutableArray" id="hUY-GF-1ey"/>
                         <outletCollection property="letterButtons" destination="d91-te-eNw" collectionClass="NSMutableArray" id="cho-gN-hQa"/>
                         <outletCollection property="letterButtons" destination="L7c-Sg-1ht" collectionClass="NSMutableArray" id="MQg-7C-5QA"/>
-                        <outletCollection property="letterButtons" destination="3y4-ZV-a6N" collectionClass="NSMutableArray" id="hUY-GF-1ey"/>
                         <outletCollection property="letterButtons" destination="8RK-ck-d4W" collectionClass="NSMutableArray" id="oKe-0Y-WOZ"/>
                         <outletCollection property="letterButtons" destination="gPx-6d-f1X" collectionClass="NSMutableArray" id="1sg-fE-GNb"/>
                         <outletCollection property="letterButtons" destination="Kpn-Fp-HAB" collectionClass="NSMutableArray" id="kaP-HD-51D"/>

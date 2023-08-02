@@ -32,6 +32,9 @@ class StartViewController: UIViewController {
      */
     
     @IBAction func startButton(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToGameViewController", sender: self)
+        let gameVC = storyboard?.instantiateViewController(withIdentifier: "GameViewController")
+        self.present(gameVC!, animated: true, completion: nil)
+        
+//        self.performSegue(withIdentifier: "goToGameViewController", sender: self)
     }
 }

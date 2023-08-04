@@ -82,7 +82,8 @@ class GameViewController: UIViewController {
         if gameBrain.secondsRemaining <= 0 {
             timer.invalidate()
             gameBrain.newGame(numLetters: letterButtons.count)
-            self.dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
+            //self.dismiss(animated: true)
             
         }
     }

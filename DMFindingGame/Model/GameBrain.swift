@@ -84,18 +84,21 @@ import Foundation
          self.numLetters = numLetters
          score = 0
          secondsRemaining = 30
+         //highScore =
          newRound()
      }
      
      func letterSelected(selectedLetter: String) {
          if (selectedLetter == targetLetter) {
              score += 1
+             highScore = score
+             print(highScore)
          }
          
          if (score > highScore){
              highScore = score
          }
-         
+    
          newRound()
      }
      

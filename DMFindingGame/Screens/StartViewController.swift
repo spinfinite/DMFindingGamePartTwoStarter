@@ -24,7 +24,7 @@ class StartViewController: UIViewController {
         super.viewWillAppear(animated)
         
         highScoreLabel.text = "High Score: "+String(gameBrain.highScore)
-        
+        print(highScoreLabel.text!)
     }
     
     /**
@@ -32,9 +32,16 @@ class StartViewController: UIViewController {
      */
     
     @IBAction func startButton(_ sender: UIButton) {
-        let gameVC = storyboard?.instantiateViewController(withIdentifier: "GameViewController")
-        self.present(gameVC!, animated: true, completion: nil)
+        let gameVC = storyboard!.instantiateViewController(withIdentifier: "GameViewController")
+        navigationController?.pushViewController(gameVC, animated: true)
+//        self.present(gameVC!, animated: true, completion: nil)
         
 //        self.performSegue(withIdentifier: "goToGameViewController", sender: self)
     }
+    
+//    func updateStartUI() {
+//        highScoreLabel.text = String(gameBrain.highScore)
+//        print(highScoreLabel!)
+//
+//    }
 }

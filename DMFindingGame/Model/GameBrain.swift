@@ -26,6 +26,10 @@ import Foundation
       - A [String] `letters` set to the letters of the alphabet.
       
      **/
+     
+     var coreData = CoreDataManager.shared
+     
+     
      var targetLetter = ""
      var randomLetters = [String]()
      var score = 0
@@ -91,7 +95,11 @@ import Foundation
      func letterSelected(selectedLetter: String) {
          if (selectedLetter == targetLetter) {
              score += 1
-             highScore = score
+             
+             coreData.addScore(score: score)
+             
+             //Before CoreData we kept score and high score in GameBrain
+             //highScore = score
              print(highScore)
          }
          
